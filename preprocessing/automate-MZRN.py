@@ -17,7 +17,8 @@ target_col = "class"
 chosen_features = []
 
 path = "./"
-file_path = path + "StellarClassification-raw.csv"
+ds_path = path + "StellarClassification-raw.csv"
+file_path = path + "preprocessing/StellarClassification/StellarClassification-headers.csv"
 save_path = path + "pipeline.joblib"
 
 #Membaca dataset
@@ -29,8 +30,8 @@ def load_ds(ds_link = ds_link):
     df = pd.read_csv(csv_path)
     return df
 
-def load_ds_file(file_path = file_path):
-    df = pd.read_csv(file_path)
+def load_ds_file(file_path = ds_path):
+    df = pd.read_csv(ds_path)
     return df
 
 #Mendefinisikan fungsi:

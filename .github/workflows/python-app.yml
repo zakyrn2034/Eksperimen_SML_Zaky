@@ -29,4 +29,11 @@ jobs:
         pip install numpy pandas scikit-learn kagglehub joblib
     - name: Build dataset
       run: |
-          python preprocessing/automate-MZRN.py
+        python preprocessing/automate-MZRN.py
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Automated update: preprocess new dataset [skip ci]"
+        git push origin main
