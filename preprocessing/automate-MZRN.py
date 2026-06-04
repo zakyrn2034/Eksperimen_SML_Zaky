@@ -18,7 +18,7 @@ chosen_features = []
 
 path = "./"
 ds_path = path + "StellarClassification-raw.csv"
-file_path = path + "preprocessing/StellarClassification/StellarClassification-headers.csv"
+file_path = path + "preprocessing/StellarClassification_preprocessing/headers.csv"
 save_path = path + "pipeline.joblib"
 
 #Membaca dataset
