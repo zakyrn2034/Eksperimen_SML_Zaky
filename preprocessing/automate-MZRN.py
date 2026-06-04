@@ -121,6 +121,6 @@ res = data_preprocessing(df=df,target_col=target_col,save_path=save_path,file_pa
 file_names = ["X_train", "X_test", "y_train", "y_test"]
 for i in range(len(res)):
     if i >= 2:
-        res[i].to_csv(path + "preprocessing/StellarClassification/-StellarClassification-" + file_names[i] + ".csv",index=False)
+        res[i].to_csv(path + "preprocessing/StellarClassification/" + file_names[i] + ".csv",index=False)
     else:
-        res[i].to_csv(path + "preprocessing/StellarClassification/-StellarClassification-" + file_names[i] + ".csv")
+        res[i].to_csv(path + "preprocessing/StellarClassification/" + file_names[i] + ".csv")
