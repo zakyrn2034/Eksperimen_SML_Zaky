@@ -118,6 +118,8 @@ df = load_ds_file(file_path)
 
 res = data_preprocessing(df=df,target_col=target_col,save_path=save_path,file_path=file_path)
 
+
+os.makedirs("preprocessing/StellarClassification", exist_ok=True)
 file_names = ["X_train", "X_test", "y_train", "y_test"]
 for i in range(len(res)):
     if i >= 2:
